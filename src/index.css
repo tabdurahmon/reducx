@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1216px] mx-auto my-[88px];
+  }
+
+  @import url(https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@100;200;300;400;500;600;700&display=swap);
+
+  body {
+    font-family: "Red Hat Text", sans-serif;
+    background-color: #fcf8f6;
+    color: #260f08;
+  }
+
+  .btn-border {
+    border: 1px solid var(--color-rose-400, #ad8a85);
+  }
+
+  .bg-over {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
